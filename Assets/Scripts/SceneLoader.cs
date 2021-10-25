@@ -27,6 +27,11 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
+
+    public void LoadNewScene(int sceneNumber)
+    {
+        SceneManager.LoadScene(sceneNumber);
+    }
     // Update is called once per frame
     void Update()
     {
