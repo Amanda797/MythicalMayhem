@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LibraryofAlexandria.unity
     guid: 96a29b4d34e2d0249972fe660c3a2398
+  - enabled: 1
+    path: Assets/Scenes/Weapons.unity
+    guid: 69ded386137edd24fbbaec8949f2153c
   m_configObjects: {}
