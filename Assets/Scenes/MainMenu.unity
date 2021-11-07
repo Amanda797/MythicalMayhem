@@ -252,7 +252,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0a6c403dfc9cdd441a749f0b330e40f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c22b41e3ff6bc54f9fde3fc39d2942b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -327,8 +327,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.85, y: -58.6}
-  m_SizeDelta: {x: 305.6, y: 167.2}
+  m_AnchoredPosition: {x: 65.2, y: -63.7}
+  m_SizeDelta: {x: 258.9, y: 157.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240795701
 MonoBehaviour:
@@ -377,8 +377,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 258040494}
   - component: {fileID: 258040493}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Options Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -532,12 +532,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2021539671}
-        m_MethodName: LoadNextScene
-        m_Mode: 1
+        m_MethodName: LoadNewScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6abdf1890659f9643a130d05727f26e4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c065d77e62c9aa4bb7237b075a7bc5a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -728,6 +728,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1782373590594058563, guid: 9c85dbeb6bb62ea49b620a186b639009,
+        type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.093
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c85dbeb6bb62ea49b620a186b639009, type: 3}
 --- !u!1 &703164193
@@ -844,9 +849,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: -71}
-  m_SizeDelta: {x: 582.7, y: 217.7}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2, y: -90.5}
+  m_SizeDelta: {x: 582.7, y: 205.3}
+  m_Pivot: {x: 0.5, y: 0.43509832}
 --- !u!114 &841237360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,8 +901,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1102,8 +1107,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 548.85, y: 190.3}
-  m_SizeDelta: {x: 426, y: 129.1}
+  m_AnchoredPosition: {x: 484.3, y: 190.3}
+  m_SizeDelta: {x: 487.8, y: 129.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1139514130
 MonoBehaviour:
@@ -1154,13 +1159,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 257
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1732,8 +1737,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 24.1, y: -17.5}
+  m_SizeDelta: {x: 151.9, y: 53.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1467663922
 MonoBehaviour:
@@ -1784,8 +1789,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1949,7 +1954,7 @@ GameObject:
   - component: {fileID: 1601227377}
   - component: {fileID: 1601227376}
   m_Layer: 5
-  m_Name: GreekButton
+  m_Name: NewGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2024,7 +2029,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2047,7 +2052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 319634718d5c26645a43d89fce7aed56, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e952c32694270604aaea21f21958d3b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

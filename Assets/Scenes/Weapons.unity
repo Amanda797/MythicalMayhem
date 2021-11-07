@@ -425,6 +425,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1782373590594058563, guid: 9c85dbeb6bb62ea49b620a186b639009,
+        type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.056
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c85dbeb6bb62ea49b620a186b639009, type: 3}
 --- !u!1 &392538758
@@ -1317,7 +1322,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
