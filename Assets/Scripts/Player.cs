@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
@@ -19,38 +20,40 @@ public class Player : MonoBehaviour
     void Update()
     {
         Walk();
+        FireWeapon();
         Animate();
         FlipSprite();
     }
 
+    private bool FireWeapon()
+    {
+        return Input.GetKeyDown(KeyCode.Mouse0);
+    }
+
     private void FlipSprite()
     {
-        if (Input.GetAxis("Horizontal") < 0)
+        if (CrossPlatformInputManager.GetAxis("Horizontal") < 0)
         {
             sr.flipX = true;
         }
-        else if (Input.GetAxis("Horizontal") > 0)
+        else if (CrossPlatformInputManager.GetAxis("Horizontal") > 0)
         {
             sr.flipX = false;
         }
     }
 
-    void Walk()
+    private bool Walk()
     {
         float controlThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
+
+        return controlThrow != 0;
     }
 
     private void Animate()
     {
-        if (Input.GetAxis("Horizontal") != 0) 
-        { 
-            anim.SetBool("IsMoving", true); 
-        }
-        else
-        {
-            anim.SetBool("IsMoving", false);
-        }
+        anim.SetBool("IsMoving", Walk());
+        anim.SetBool("IsShooting", FireWeapon());
     }
 }
